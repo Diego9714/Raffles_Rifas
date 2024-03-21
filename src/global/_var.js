@@ -13,6 +13,8 @@ const PG_NAME                   = process.env._NAME
 
 // Users
 const GET_RAFFLE                = process.env.GET_RAFFLE
+const DETAILED_RAFFLE           = process.env.DETAILED_RAFFLE
+const SALES_RAFFLE              = process.env.SALES_RAFFLE
 const REGISTER_RAFFLE           = process.env.REGISTER_RAFFLE
 const EDIT_RAFFLE               = process.env.EDIT_RAFFLE
 const DELETE_RAFFLE             = process.env.DELETE_RAFFLE
@@ -24,5 +26,5 @@ module.exports = {
   // Database
   PG_HOST, PG_USER, PG_PASS, PG_NAME,
   // Sellers
-  GET_RAFFLE, REGISTER_RAFFLE, EDIT_RAFFLE, DELETE_RAFFLE, RAFFLES_SELLERS
+  GET_RAFFLE, DETAILED_RAFFLE, SALES_RAFFLE, REGISTER_RAFFLE, EDIT_RAFFLE, DELETE_RAFFLE, RAFFLES_SELLERS
  }

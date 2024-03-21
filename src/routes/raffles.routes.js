@@ -1,4 +1,4 @@
-const { GET_RAFFLE , REGISTER_RAFFLE , EDIT_RAFFLE , DELETE_RAFFLE , RAFFLES_SELLERS} = require('../global/_var.js')
+const { GET_RAFFLE , SALES_RAFFLE, DETAILED_RAFFLE , REGISTER_RAFFLE , EDIT_RAFFLE , DELETE_RAFFLE , RAFFLES_SELLERS} = require('../global/_var.js')
 
 // Dependencies
 const express = require('express')
@@ -10,6 +10,10 @@ const saveController = require('../controllers/saveInfo.controller.js')
 
 // Routes
 router.get(GET_RAFFLE , dataController.getRaffles)
+
+router.get(DETAILED_RAFFLE , dataController.getDetailed)
+
+router.get(SALES_RAFFLE , dataController.getSales)
 
 router.get(RAFFLES_SELLERS , dataController.getRaffleSellers)
 
